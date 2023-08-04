@@ -1,0 +1,84 @@
+*
+  box-sizing: border-box
+html
+  scroll-behavior: smooth
+body 
+  margin: 0
+  font-family: 'Inter', sans-serif
+  overflow-x: hidden
+section, footer
+  margin-top: 120px
+=position 
+  height: 100vh
+  padding: 64px 120px
+=menu-text 
+  color: #292929
+  font-family: Inter
+  font-size: 22px
+  font-style: normal
+  font-weight: 700
+  line-height: 22px
+  letter-spacing: 2px
+  text-transform: uppercase
+=main-title
+  color: #292929
+  font-family: Inter
+  font-size: 48px
+  font-weight: 800
+  line-height: 100%
+  letter-spacing: -1.5px
+=section-title 
+  color: #292929
+  text-align: center
+  font-family: Inter
+  font-size: 48px
+  font-style: normal
+  font-weight: 700
+  line-height: 48px
+  letter-spacing: -1.5px
+.header
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  +position 
+  background-image: url("../img/header-bg.jpg") 
+  background-repeat: no-repeat
+  background-position: center 
+  background-size: cover 
+  position: relative
+  &__top  
+    display: flex
+    align-items: center
+    justify-content: space-between  
+  &-title 
+    +main-title 
+.burger
+  cursor: pointer
+.close
+  cursor: pointer
+.menu
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: #E8EFF9
+  transition: transform 0.4s
+  transform: translateX(-100%)
+  +position
+  &__list
+    padding: 0
+  &__item
+    list-style: none
+    &:not(:last-child)
+      margin-bottom: 32px
+    &-link 
+      text-decoration: none
+      +menu-text 
+.menu.active
+  transform: translateX(0)
+.navbar
+   margin-top: 64px
+.section 
+  &-title 
+    +section-title 
