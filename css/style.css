@@ -161,4 +161,12 @@ section, footer {
   line-height: 140%;
   letter-spacing: normal;
   font-weight: 700;
+}
+
+.footer {
+  background-image: url("../img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 460px;
 }/*# sourceMappingURL=style.css.map */
