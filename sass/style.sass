@@ -7,7 +7,7 @@ body
   font-family: 'Inter', sans-serif
   overflow-x: hidden
   color: #292929
-section, footer
+section
   margin-top: 120px
 =position 
   height: 100vh
@@ -58,11 +58,6 @@ section, footer
     margin-top: 40px
     margin-bottom: 0
     +main-title 
-.container 
-  max-width: 1260px
-  width: 100%
-  margin: 0 auto
-  
 .burger
   cursor: pointer
 .close
@@ -99,6 +94,7 @@ section, footer
 .how-to-buy
   text-align: left
 .main
+  background: #fff
   padding: 120px
 .product
   flex-basis: 324px
@@ -123,10 +119,48 @@ section, footer
     margin: 0
     +product-text 
     font-weight: 700
-
-
+.categories
+  max-width: 1020px
+  margin: 0 auto
+.category
+  margin-bottom: 64px
+  &__photos
+    display: flex
+    flex-basis: 320px
+    gap: 3%
+  &__wide
+    width: 65%
+  &__square
+    width: 32%
+.how-to-buy
+  display: flex
+  gap: 24px
+  max-width: 1020px
+  margin: 0 auto
+  &__title
+    text-align: left
+    flex-basis: 50%
+    margin: 0
+  &__content
+    flex-basis: 50%
+  &__benefits
+    display: flex
+    flex-direction: column
+    gap: 16px
+    list-style: none
+    +product-text 
+    font-weight: 700
+    padding: 0
+    margin: 0
+    margin-bottom: 40px
+  &__description
+    +product-text 
+    line-height: 27px
 
 .footer
+  position: sticky
+  bottom: 0
+  z-index: -1
   background-image: url("../img/footer-bg.jpg") 
   background-repeat: no-repeat
   background-position: center 
