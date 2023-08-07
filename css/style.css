@@ -49,50 +49,17 @@ section {
   flex-direction: column;
   justify-content: space-between;
   width: 24px;
+  height: 24px;
+  background-image: url("../img/icons/icon-burger-menu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
   cursor: pointer;
+  transition: background 0.5s;
 }
-
-.first-line {
-  padding: 2px;
-  position: absolute;
-  background: #292929;
-  width: 24px;
-  border-radius: 2px;
-  cursor: pointer;
-  left: 0;
-  bottom: 3px;
-  transition: width 0.5s;
-}
-
-.middle-line {
-  padding: 2px;
-  position: absolute;
-  background: #292929;
-  width: 24px;
-  border-radius: 2px;
-  cursor: pointer;
-  left: 0;
-}
-
-.threes-line {
-  padding: 2px;
-  position: absolute;
-  background: #292929;
-  width: 24px;
-  border-radius: 2px;
-  cursor: pointer;
-  left: 0;
-  top: 7px;
-  transition: width 0.5s;
-}
-
-.burger:hover .first-line {
-  width: 18px;
-}
-
-.burger:hover .threes-line {
-  width: 10px;
+.burger:hover {
+  background-image: url("../img/icons/icon-burger-menu-hover.png");
 }
 
 .close {
@@ -130,6 +97,9 @@ section {
   line-height: 22px;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+.menu__item-link:hover {
+  text-decoration: underline;
 }
 
 .menu.active {
